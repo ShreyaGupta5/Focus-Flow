@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FocusFlow App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌿 FocusFlow</h1>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkBtn">Toggle Dark Mode</button>
+
+    <!-- Habit Section -->
+    <h2>Habit Tracker</h2>
+    <div class="habit-input">
+        <input type="text" id="habitInput" placeholder="Enter habit...">
+        <button onclick="addHabit()">Add</button>
+    </div>
+    <ul id="habitList"></ul>
+
+    <!-- Progress Section -->
+    <h2>Progress Analytics</h2>
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+    <p id="progressText">0% Completed</p>
+
+    <!-- Productivity Timer -->
+    <h2>Productivity Timer (5 min)</h2>
+    <h1 id="timer">5:00</h1>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
